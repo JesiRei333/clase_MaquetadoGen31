@@ -20,10 +20,15 @@ p {
     text-decoration: underline;
 }
 
+p{
+    color:green;
+}
+
 </style>
 
 
-
+<!-- hoja de estilos extrenas -->
+<link rel="stylesheet" href="/clase2/CSS/styles.css">
 
 </head>
 
@@ -33,7 +38,7 @@ p {
     
 
     <!-- estilos en linea (inline)-->
-    <h1 style="color:blue; font-size: 40px;"> Clase CSS </h1>
+    <h1 style="color:magenta; font-size: 40px;"> Clase CSS </h1>
 
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quisquam
@@ -42,8 +47,37 @@ p {
       excepturi saepe soluta vel inventore?
     </p>
 
-    <p> parrafo 1</p>
-    <p> parrafo 2</p>
+
+    <!-- selectores de clase -->
+    <p class="parrafoAzul"> parrafo 2 -su clase es parrafoAzul- </p>
+
+    <!-- selectores de Id-->
+    <p id="parrafoAmarillo">parrafo 3 -su Id es parrafoAmarillo-</p>
+
+    <!-- se agrega lista desordenada-->
+
+    
+    lista de elementos UL
+
+    <ul class="contenedorNegro">
+    
+
+        <li> Elemento de la lista 1 </li>
+        <li class="parrafoAzul"> Elemento de la lista 2 </li>
+        <li> </li>
+        <li> </li>
+
+    </ul>
+
+
+    <div>
+        <a href="#"> enlace1</a>
+    </div>
+
+    <div class="contenedorNegro">
+        <a href="#"> enlace1</a>
+    </div> 
+
 
 </body>
 </html>
