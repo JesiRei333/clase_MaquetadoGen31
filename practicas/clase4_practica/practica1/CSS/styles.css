@@ -4,11 +4,7 @@
   border: 2px solid rgb(227, 98, 171);
   background-color: #eeb1db;
   position: relative;
-
- 
 }
-
-
 
 .box{
   width: 150px;
@@ -18,7 +14,6 @@
   color: white;
   margin: 10px;
   position: absolute;
- 
 }
 
 .galeryBox1{

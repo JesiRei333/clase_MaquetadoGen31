@@ -127,9 +127,21 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 300ms ease, transform 300ms ease;
+    transition: background-color 300ms , transform 300ms ease-in-out;
+  }
+
+  .impressive-button:hover {
+    background-color: #5d85a0;
+    transform: scale(0.6);
   }
   
+  /* La propiedad transfom hace que 
+  cuando damos click en el botón este se
+   haga más grande o pequeño según le indiques*/
+   
+
+
+
   .imgHover {
     transition: all 500ms ease-in-out;
   }
@@ -138,10 +150,6 @@
     filter: invert(0.8);
   }
   
-  .impressive-button:hover {
-    background-color: #5d85a0;
-    transform: scale(0.6);
-  }
   
   .container {
     width: 650px;
