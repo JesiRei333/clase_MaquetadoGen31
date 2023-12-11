@@ -40,11 +40,11 @@
     right: 0;
   }
   
-  .box.boxAzul.posicionFixed {
-    z-index: 2;
+  .box.boxAzul.posicionFixed { /*para buscar va sin espacios*/
+    z-index: 2; /* z-index nos permite elegir la capa de posicion de  los elementos que tengan  una posicion diferente a  static */
   }
   
-    /* z-index nos permite elegir la capa en que se posicionan los elementos que tengan  una posicion diferente a la static */
+    
   
     /* position absolute */ 
     /* hay 2 casos:
@@ -106,4 +106,87 @@
     background-color: green;
   }
   
+  .galeria {
+    width: 450px;
+    height: 300px;
+    border: 1px solid #e3e3e3;
+  }
   
+  /* Animaciones y transiciones */
+  
+  /* Transiciones
+    las transiciones, hacen que el cambio
+    de propiedad de css como el background-color
+    al hacer hover se vea mas fluio 
+   */
+  .impressive-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 300ms ease, transform 300ms ease;
+  }
+  
+  .imgHover {
+    transition: all 500ms ease-in-out;
+  }
+  
+  .imgHover:hover {
+    filter: invert(0.8);
+  }
+  
+  .impressive-button:hover {
+    background-color: #5d85a0;
+    transform: scale(0.6);
+  }
+  
+  .container {
+    width: 650px;
+    height: 250px;
+    background-color: #e3e3e3;
+    position: relative;
+    padding: 20px;
+    margin: 50px 0;
+  }
+  
+  /* Animaciones */
+  
+  /* 
+    animacion css 
+    el nombre de la animacion de mover-cuadro
+    en las animaciones hay que definir lo que 
+    sucede en cada frame que compone la animacion
+  
+  */
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    /* animation: 
+      nombre de la animacion, duracion, efecto, al usar infinite, nuestra animacion nunca se detendra */
+    animation: moveCircle 5s linear infinite reverse;
+    /* animation: moveCircle 4s linear infinite;  */
+    /* 4s duration, linear easing, infinite loop */
+  }
+  
+  @keyframes moveCircle {
+    0% {
+      left: 0;
+      background-color: red;
+    }
+    50% {
+      background-color: yellow;
+      left: 600px;
+      border-radius: 0;
+    }
+    100% {
+      background-color: #3498db;
+      left: 0;
+    }
+  }
