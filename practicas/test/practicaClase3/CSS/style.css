@@ -1,0 +1,58 @@
+
+      body {
+        font-family:Arial, Helvetica, sans-serif;
+      }
+
+   
+/*contenedor principal*/
+      .comment-container {
+        width: 500px ;
+        margin: 100px auto ; /* auto alinea el centro en hotizontal*/
+      }
+
+      /* las cajas que contendran los comentarios*/
+      .comment {
+        background-color: #f5b6dc;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 10px;
+        position:relative;
+      }
+
+      /* Contenido que se creara antes y se agregara a cada comentario */
+      .comment p::before {
+        content: "💬♥"; 
+        font-size: 20px;
+        margin-right: 8px;
+      
+      }
+
+     /* Contenido que se agregará después de cada comentario */
+      .comment p::after {
+        content: ""; 
+        font-size: 1.5em;
+        margin-right: 8px;
+      }
+
+      /* selector en base a un indice*/
+
+      /* 
+      .comment-container (nombre de la clase)
+      . accedo a el
+      comment (acceder a la clase hijo)
+      : accedo a el
+      :nth-child() accedo al indice de los hijos 
+      p accedo a etiqueta tipo parrafo
+      agrego el after o contenido adicionado 
+      */
+      .comment-container .comment:nth-child(1) p::after {
+        content: "🐈‍⬛ ";
+      }
+
+      .comment-container .comment:nth-child(2) p::after {
+        content: "🩷";
+      }
+
+      .comment-container .comment:nth-child(3) p::after {
+        content: "🐱 ";
+      }
