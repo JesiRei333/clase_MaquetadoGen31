@@ -1,0 +1,109 @@
+/* Reset -va primero-: le quita el margin y padding a todas las etiquetas de la pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  /* Posicioamientos */
+ 
+ 
+  /* position relative: habilita las propiedades de direccion:top, left, bottom, right. */
+ 
+      .posicionRelativa {
+    position: relative;
+  }
+  
+  /* El movimiento nace de la esquina superior izquierda. Para mover el elemento desde el lado derecho se usan valores negativos*/
+  .cajaRelativa {
+    top: 50px;
+    left: -10px;
+    /* right y bottom se invalidan al usar top y left (solo podemos usar dos propiedades  a la vez )*/
+  }
+  
+  /* Position: Fixed los elementos fixed se posicionan o fijan a la ventana del navegador (Window) tambien desbloquean las propiedades top rigth*/
+  .posicionFixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  .box.boxAzul.posicionFixed {
+    z-index: 2;
+  }
+  
+    /* z-index nos permite elegir la capa en que se posicionan los elementos que tengan  una posicion diferente a la static */
+  
+    /* position absolute */ 
+    /* hay 2 casos:
+          1) los elementos se posicionan de forma absoluta con el documento
+          2) los elementos se posicionan de forma absoluta con el primer elemento padre contenedor cuya posicion sea RELATIVA
+  */
+  .posicionAbsoluta {
+    position: absolute;
+  }
+  
+  .cajaAbsoluta1 {
+    top: 0;
+    left: 120px;
+  }
+  
+  .contenedorRelativo {
+    width: 400px;
+    height: 350px;
+    border: 2px solid red;
+    background-color: #e3e3e3;
+  }
+  
+  .contenedorRelativo .posicionAbsoluta {
+    top: 0;
+    left: 0;
+  }
+  
+
+  /* position sticky */
+  /*Los elementos sticky es una combinacion entre position relative y absolute.
+    Comienzan siendo relativos, cuando hacemos scroll dentro del padre contenedor, se hacen fixed dentro ( necesitan tener un padre contenedor). */
+
+
+  .posicionSticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  
+  .title {
+    background-color: #3498db;
+    padding: 10px;
+    color: white;
+  }
+  
+  .stickyContainer {
+    border: 5px solid #3498db;
+  }
+  
+
+
+
+
+  .boxAzul {
+    background-color: blue;
+  }
+  
+  .boxVerde {
+    background-color: green;
+  }
+  
+  
