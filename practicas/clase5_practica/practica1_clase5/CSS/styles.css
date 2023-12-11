@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background: #000;
+}
+
+.articuloNoResponsivo {
+    min-width: 800px;
+   min-height: 400px;
+    padding: 20px;
+    background: pink;
+    color: black;
+    overflow-y:auto ;
+    overflow-x: hidden;
+
+}
+
+.articuloResponsivo {
+    width: 100%;
+    margin-top: 40px;
+    min-height: 400px;
+    padding: 20px;
+    background: rgb(200, 97, 176);
+    color: black;
+ 
+
+}
+
+.responsiveChild1{
+    width: 15%;
+    border: 1px solid #000;
+    height: 200px;
+    display: inline-block;
+}
+
+.responsiveChild2{
+    width: 66%;
+    border: 1px solid #4d2a2a;
+    height: 200px;
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.responsiveChild3{
+    width: 15%;
+    border: 1px solid #ac209b;
+    height: 200px;
+    display: inline-block;
+}
+
+/* cuando mi pantalla mida menos de 600 px voy a aplicar los sig estilos*/
+@media screen and (max-width:600px){
+.articuloNoResponsivo {
+    background: paleturquoise;
+}
+
+.responsiveChild1,
+.responsiveChild2,
+.responsiveChild3{
+    width: 98%;
+    margin: 0;
+}
+}
+
+/*medidas*/
+
+@media screen and (min-width:0px){
+    .articuloResponsivo {
+        background: rgb(226, 208, 122);
+    }
+
+    .visibleTablet,
+    .visibleDesktop,
+    .visibleCompu,
+    .visibleMobile{
+        display: none;
+    }
+    
+}
+
+    
+        /*medidas celular*/
+    @media screen and (min-width:600px){
+        .articuloResponsivo {
+            background: rgb(74, 166, 166);
+        }
+
+        .visibleTablet,
+        .visibleDesktop,
+        .visibleCompu{
+            display: none;
+        }
+        .visibleMobile{
+            display:contents;
+        }
+    }
+    
+    /*medidas tablet*/
+@media screen and (min-width:768px){
+    .articuloResponsivo {
+        background: rgb(133, 205, 156);
+    }
+    .visibleMobile,
+    .visibleDesktop,
+    .visibleCompu{
+        display: none;
+    }
+    .visibleTablet{
+        display:contents;
+    }
+    
+}
+
+    
+/*medidas laptop pequeña*/
+@media screen and (min-width:992px){
+    .articuloResponsivo {
+        background: rgb(218, 81, 53);
+    }
+    .visibleTablet,
+    .visibleMobile,
+    .visibleCompu{
+        display: none;
+    }
+    .visibleDesktop{
+        display:contents;
+    }
+
+    /*medidas extra grande*/
+
+    @media screen and (min-width:1440px){
+        .articuloResponsivo {
+            background: rgb(218, 53, 185);
+        }
+        .visibleTablet,
+        .visibleMobile,
+        .visibleDesktop
+        {
+            display: none;
+        }
+        .visibleCompu{
+            display:contents;
+        }
+    }
+
+    
+}
+
+    /*medidas se pone desde el mas chico hasta el más grande
+    ya que si aplican los estilos en cascada
+    css y la herencia */ 
