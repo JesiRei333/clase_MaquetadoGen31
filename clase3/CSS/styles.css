@@ -1,3 +1,8 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 #selectorHermano h3 + p {
 color: brown; 
 font-size: 28px;
@@ -33,4 +38,125 @@ input[type="tex"]{
     width:  600px;
     margin: 20px;
     padding: 20px;
+}
+
+
+.btn {
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgb(211, 172, 223);
+    color: rgb(211, 172, 223) ;
+    cursor: pointer;
+   
+}
+
+.btn:hover{
+background: rgb(211, 172, 223);
+color: aliceblue;
+}
+
+.imgHover:hover {
+    filter: sepia(0.5);
+
+}
+
+/* enlaces */
+
+/* CAMBIAR COLOR A LIK VISITADO */
+
+a:visited{
+    color: palevioletred;
+}
+
+/* CAMBIAR COLOR A LIK no VISITADO */
+
+a:link{
+    color: rgb(150, 112, 216);
+}
+
+/* CAMBIAR COLOR A LIKcuando pique el enlace */
+a:active{
+    color: rgb(18, 64, 150);
+    text-decoration: none;
+}
+
+/* listas*/
+.listaCajas {
+    list-style: none;
+}
+.listaCajas {
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    margin:  10px;
+    text-align: center;
+}
+
+.listaCajas li:first-child {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    margin:  10px;
+    text-align: center;
+    color: aliceblue;
+    
+}
+
+.listaCajas li:last-child {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    margin:  10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* selector en base a un indice*/
+
+.listaCajas li:nth-child(3){
+    width: 80px;
+    height: 80px;
+    background-color: rgb(0, 255, 179);
+    margin:  10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.listaCajas li:nth-child(4){
+    width: 80px;
+    height: 80px;
+    background-color: rgb(79, 51, 215);
+    margin:  10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* cuenta de abajo hacia arriba por medio del indice*/
+.listaCajas li:nth-last-child(2){
+    width: 80px;
+    height: 80px;
+    background-color: rgb(171, 215, 51);
+    margin:  10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.listaCajas li:nth-last-child(5){
+    border-radius: 100%;
+    background-color: rgb(202, 242, 234);
+    margin:  10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.before::before{
+    content: "hola";
+}
+
+.after::after{
+    content: "hola";
+}
+.firstLetter::first-letter {
+    font-size: 45px;
+    font-size: italic;
 }
