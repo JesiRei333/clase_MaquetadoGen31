@@ -1,0 +1,161 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(rgb(238, 155, 210), rgb(166, 73, 168));
+ min-height: 100vh;
+ font-family: 'Roboto', sans-serif;
+ background-image: url(/clase5/blog/imagenes/gato-arte-7864.webp);
+ background-size: contain;
+ margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  animation: moveCircle 7s linear infinite reverse;
+  
+}
+
+
+.container {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(rgb(238, 155, 210), rgb(166, 73, 168));
+  position: relative;
+  padding: 0px;
+  margin: 0px 0;
+}
+
+
+@keyframes moveCircle {
+  0% {
+    left: 0;
+    background-color: rgb(224, 174, 233);
+  }
+  50% {
+    background-color: rgb(233, 92, 196);
+    left: 600px;
+    border-radius: 0;
+  }
+  100% {
+    background-color: #e99bc6;
+    left: 0;
+  }
+}
+/*  
+  .enlaces es la clase que tiene el contenedor gris de los enlaces
+  background-color: define el color gris de fondo, se estan usando
+  colores en hexadecimal
+  padding: espacio interno de la etiqueta, da un espacio dentro del area gris
+  border-radius: redondea los bordes, en el area gris, las esquinas esta redondeaddas
+  width: Define el anchode la seccion
+  margin-top: espacio exterior del area gris hacia arriba;
+  margin-bottom: espacio exterior del area gris hacia abajo;
+  margin-left: espacio exterior del area gris hacia la izquierda;
+  margin-right: espacio exterior del area gris hacia derecha;
+  nota: usar margin con valor en 'auto' centra los elementos que tengan un width definido
+  
+*/
+.enlaces {
+  background-color: #f4a6f4;
+  background-image: url(/practicas/clase5_practica/practica2_blog_clase5/imagenes/desktop-wallpaper-kawaii-laptop-pink-kawaii-anime-pink.jpg);
+  background-size: 100%;
+  background:;
+  padding: 30px;
+  border-radius: 50px;
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+
+.enlaces li {
+  list-style: none;
+  padding: 4px;
+}
+
+.enlaces a {
+  color: #0c0c0c;
+  font-size: medium;
+  font-family: cursive;
+}
+
+.enlaces ul {
+  border: 1px dashed #611d7b;
+}
+
+/* selector de etiqueta p, clase . id # */
+.docsContainer {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloqueDocumentacion {
+  margin-top: 8px;
+}
+
+.docItem {
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid hsl(294, 43%, 81%);
+}
+
+.docItemTitle,
+.docItemDescription,
+.codeExampleContainer {
+  margin: 8px;
+}
+
+.codeExample {
+  background-color: #764b7a;
+  height: 25px;
+  color: #e51be1;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.docItem p:nth-child(2) {
+  color: #7d6363;
+}
+
+.docItem h3 {
+  margin: 8px;
+}
+
+
+
+.docItem h3::before {
+  content: "♥"; 
+  font-size: 20px;
+  margin-right: 8px;
+
+}
+
+.enlaces a::before {
+  content: "♥"; 
+  font-size: 20px;
+  margin-right: 8px;
+
+}
+
+.enlaces a::after {
+  content: "♥ ";
+}
+

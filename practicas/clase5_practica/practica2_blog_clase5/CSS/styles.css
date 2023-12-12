@@ -79,3 +79,14 @@ main{
     
     }
 }
+
+.enlaces {
+    padding: 10px;
+   
+    
+}
+
+.enlaces:hover{
+    padding: 10px;
+    background: transparent;
+}
