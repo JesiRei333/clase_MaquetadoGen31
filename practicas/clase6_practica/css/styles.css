@@ -1,0 +1,72 @@
+*{
+    box-sizing:content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size:medium;
+    color: black;
+    font-style: italic;
+    background-image: url(/clase5/blog/imagenes/desktop-wallpaper-pastel-aesthetic-gaming-laptop-pastel-pink-anime-pc.jpg);
+    background-size: 100%;
+}
+
+
+.contenedorMain{
+width: 1000px;
+height: 1000px;
+border: 20px solid pink;
+background-image: url(/clase5/blog/imagenes/gato-arte-7864.webp);
+background-size: 100%;
+}
+
+
+.unoMain
+{
+    justify-content: space-around;
+}
+
+.contenedorColumFlex{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.contenedorFilaFlex{
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.box
+{
+    border: 10px solid palevioletred;
+    width: 100px;
+    height: 100px;
+    border-style: double;
+    border-radius: 10px;
+
+}
+
+.uno{
+    justify-content:space-around;
+}
+
+.dos{
+    justify-content:flex-start;
+}
+
+.tres{
+    justify-content:flex-end;
+}
+
+.cuatro{
+    justify-content:space-between;
+}
+
+.cinco{
+    justify-content:space-evenly;
+}
