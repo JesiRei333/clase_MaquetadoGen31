@@ -1,0 +1,26 @@
+
+.navega {
+    @include filaFlexCentradaVertical;
+    justify-content: space-between;
+
+    nav{
+    ul {
+        @include filaFlexCentradaVertical;
+        gap: 10px;
+        
+
+        list-style {
+            list-style:none;
+            padding: $paddingContenedor;
+            cursor: pointer;
+
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+   }
+}

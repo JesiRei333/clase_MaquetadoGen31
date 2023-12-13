@@ -1,0 +1,80 @@
+/* 
+1)se declaran variable
+2) se declaran mixin
+3) estilos globales
+4)se dividen en mas scss los estilos
+*/
+/*VARIABLES*/
+/*MIXIN*/
+/* los mixins nos ayudan a guardar en una variable una serie de estilos*/
+/* para goder aplicarlo hay que llmarlo con in @include + el nuombre del mixin*/
+/*ESTILOS GLOBALES*/
+/*declaracioon de estilos globales*/
+/* con variables no se puede aplicar la coma, solo heredar con estructura*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*.section,
+.section2,
+.section3 {
+    background-color:rgb(213, 145, 167) ;
+    color: black;
+}*/
+/*comodar las estucturas como se van viendo o en el orden corecto o se enciman */
+/* con scss es  mas parecido a html su estructura*/
+.section1 article p {
+  font-size: 25px;
+}
+.section1 article p #parrafoSmall {
+  font-size: 16px;
+}
+.section1 article a {
+  color: white;
+}
+
+/* importa los demas estilos  (navega y busca las hiojas de estilos */
+.navega {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navega nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.navega nav ul list-style {
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.navega nav ul li:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* se incluye un mixin */
+  justify-content: center;
+}
+main .section1 { /* no olvidar que para heredar se debe escribir la estuctura interna*/
+  width: 33%;
+}
+
+.section1, .section2, .section3 {
+  background-color: rgb(213, 145, 167);
+  color: rgb(56, 53, 53);
+  padding: 10px 15px;
+  margin: 10px 15px;
+}/*# sourceMappingURL=main.css.map */

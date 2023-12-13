@@ -1,0 +1,40 @@
+main {
+    @include filaFlexCentradaVertical; /* se incluye un mixin */
+      justify-content: center;
+      .section1 {   /* no olvidar que para heredar se debe escribir la estuctura interna*/
+           width:  33%; 
+       /*  flex: 1; 
+         flex-basis: 30%; 
+        responsivo, flex hace que las cajas se disttribuyan de manera proporcional*/
+         /* declara lo minimo con lo que inicia*/
+
+      }
+  
+  }
+  
+.section1, .section2, .section3 {
+    background-color:$colorRosaFondo;
+    color: $colorTextoGris ;
+    padding: $paddingContenedor;
+    margin: $paddingContenedor;
+}
+
+
+@media screen and (max-width: 600px){
+    main {
+        .section1{
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }
+    
+} 
+
+@media screen and (max-width: 780px){
+    main {
+        .section1{
+            width: 28%;
+        }
+    }
+    
+} 

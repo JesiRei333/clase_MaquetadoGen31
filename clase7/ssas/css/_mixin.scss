@@ -1,0 +1,9 @@
+/* los mixins nos ayudan a guardar en una variable una serie de estilos*/
+/* para goder aplicarlo hay que llmarlo con in @include + el nuombre del mixin*/
+@mixin filaFlexCentradaVertical {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+    }

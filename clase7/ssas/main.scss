@@ -1,0 +1,55 @@
+/* 
+1)se declaran variable
+2) se declaran mixin
+3) estilos globales
+4)se dividen en mas scss los estilos
+*/
+
+/*VARIABLES*/
+
+@import "VARS";
+
+/*MIXIN*/
+
+@import "mixin";
+
+/*ESTILOS GLOBALES*/
+/*declaracioon de estilos globales*/
+/* con variables no se puede aplicar la coma, solo heredar con estructura*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+   
+/*comodar las estucturas como se van viendo o en el orden corecto o se enciman */
+/* con scss es  mas parecido a html su estructura*/
+.section1 {
+    article {
+        p {
+            font-size: 25px;
+        }
+
+        p #parrafoSmall{
+            font-size: 16px;
+        }
+        a {
+            color: white;
+        }
+    }
+}
+
+
+/* importa los demas estilos  (navega y busca las hiojas de estilos */
+@import "navbar";
+@import "post";
+
+
