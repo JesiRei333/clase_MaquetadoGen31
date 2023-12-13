@@ -1,0 +1,14 @@
+/* tablets */
+@media screen and (min-width:768px){
+    .title {
+        font-size: 40px;
+
+    }
+
+    .articleItem {
+       
+        width: 45%; /* para que entren dos*/
+        display:inline-block; /*se alinie en bloque */
+        margin: 10px auto;
+    }
+}

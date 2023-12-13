@@ -1,0 +1,15 @@
+/* compu */
+@media screen and (min-width:992px){
+    .title {
+        font-size: 30px;
+
+    }
+
+    .articleItem {
+       
+        width: 30%; /* para que entren dos*/
+        display:inline-block; /*se alinie en bloque */
+        margin: 10px auto;
+    
+    }
+}

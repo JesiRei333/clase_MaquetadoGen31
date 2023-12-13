@@ -1,0 +1,47 @@
+$degradadoNegro:linear-gradient(rgb(54, 52, 52), rgb(14, 14, 14));
+$negro: black; 
+$blanco: white;
+$margin: 10px;
+$fontsize: 10px;
+$fontfamy: 'Roboto', sans-serif;
+
+
+body {
+    background: $degradadoNegro;
+    min-height: 100vh;
+    margin: $margin;
+    font-size: $fontsize;
+    color: $blanco;
+
+.main{
+    width: 100%;
+    padding: 40px;
+
+    .title{
+        font-size: 20px;
+
+        .article{
+            width: 80%;
+            margin: 0 auto;
+
+            .articleItem{
+                background-color: $negro;
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+               margin: 30px 0;
+               display: block;
+
+               
+               }
+            }
+        }
+    }
+}
+
+
+
+@import "tablets";
+@import "tamanoImg";
+@import "compu";
+@import"articleTam"; 
