@@ -1,0 +1,16 @@
+body{
+    background: url(/imagen/gato-arte-7864.webp);
+    background-size: 100%;
+}
+
+
+.miContainer{
+    margin-top: 10px;
+    background: rgba(222, 137, 215, 0.816);
+
+}
+
+.miColum{
+    border: 2px;
+    background: pink
+}

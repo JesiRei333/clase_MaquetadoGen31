@@ -1,0 +1,25 @@
+.miContainer{
+    margin-top: 10px;
+    background: grey;
+
+}
+
+.miColum{
+    border-radius: 2px;
+    background: pink
+}
+
+.miColum1{
+    border-radius: 2px;
+    background: rgb(187, 79, 97)
+}
+
+.miColum2{
+    border-radius: 2px;
+    background: rgb(206, 43, 70)
+}
+
+.miColum3{
+    border-radius: 2px;
+    background: rgb(226, 15, 50);
+}
